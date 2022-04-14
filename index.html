@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regression Model</title>
+    <!-- Importar TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.4/dist/tf.min.js"></script>
+    <!-- Importar tfjs-vis  Visualizacion-->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+ 
+</head>
+<body>
+    Json file <input type="file" id="upload-json"> <br>
+    Binary file <input type="file" id="upload-weights"><br>
+    <input type="button" value="Load model" onclick="loadModel()"><br>
+    <input type="button" value="Stop training" onclick="stopTraining=true"> 
+    <input type="button" value="Save model" onclick="saveModel()"> 
+    <input type="button" value="Inference curve" onclick="showInferenceCurve()"> 
+    <br/>
+    <script src="./script.js"></script>
+</body>
+</html>
